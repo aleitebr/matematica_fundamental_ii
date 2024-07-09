@@ -7,12 +7,16 @@ Data: 08/07/2024
 Script: numeros_primos_v3.py
 """
 
-lista_numeros_naturais = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-                          21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
+lista_numeros_naturais = []
+
+# Cria uma lista com os números naturais começando pelo número primo 2 
+for i in range(2,1000):
+    lista_numeros_naturais.append(i)
+    
 proximo_numero_primo = 2
 num_primos_encontrados = 1
 
-# Enquanto índice inicial for menor do que o tamanho da lista
+# Enquanto número de números primos for menor do que o tamanho da lista
 while (num_primos_encontrados < len(lista_numeros_naturais)):
     i = num_primos_encontrados
     while (i < len(lista_numeros_naturais)):
