@@ -16,11 +16,11 @@ for i in range(2,1000):
 proximo_numero_primo = 2
 num_primos_encontrados = 1
 
-# Enquanto número de números primos for menor do que o tamanho da lista
+# Enquanto o número de números primos encontrados for menor do que o tamanho da lista de numeros restantes
 while (num_primos_encontrados < len(lista_numeros_naturais)):
     i = num_primos_encontrados
     while (i < len(lista_numeros_naturais)):
-        if lista_numeros_naturais[i] % proximo_numero_primo == 0:
+        if lista_numeros_naturais[i] % proximo_numero_primo == 0: # testa se é divísivel
             del lista_numeros_naturais[i]
             i = i - 1
         i = i + 1    
